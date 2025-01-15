@@ -1,7 +1,17 @@
 import React from 'react';
 import Header from './components/Header';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './App.css';
 
+const location ={
+  lat: -22.892812525408765,
+  lng: -47.12060735099715,
+};
+
+const mapContainerStyle = {
+  width: '100%',
+  height: '400px',
+};
 function App() {
   return (
     <div className="App">
@@ -118,6 +128,26 @@ function App() {
           <li><strong>Compromisso com a Qualidade:</strong> Todos os nossos serviços são realizados com o máximo de cuidado e atenção aos detalhes, para garantir que suas máquinas operem da melhor forma possível.</li>
         </ul>
       </div>
+
+
+       {/* Seção de localização */}
+       <section id="localizacao">
+        <h2>Localização</h2>
+        <p>Veja onde estamos localizados:</p>
+        <LoadScript googleMapsApiKey="AIzaSyAUoWSFjsCgwS5zHTM-Cp1-Ngy6fXnuJoE">
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            center={location}
+            zoom={17}
+            options={{
+              mapId: 'MAP_ID_PERSONALIZADO', // Substitua pelo seu Map ID no Google Cloud Console
+            }}
+          >
+            <Marker position={location} />
+          </GoogleMap>
+        </LoadScript>
+      </section>
+      {/* rodapé */}
       <div className="footer">
         <p>LePetit Manutenções | Todos os direitos reservados</p>
       </div>
