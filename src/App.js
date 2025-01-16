@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Contact from './components/contact';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './App.css';
 
@@ -16,13 +17,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section id="inicio">
-        <h2>Bem-vindo à LePetit Manutenções</h2>
-        <p>Sua parceira confiável em manutenção de máquinas de solda, corte e plasma!</p>
-      </section>
-      <p>
-        Na <strong>LePetit</strong>, nos dedicamos a oferecer soluções completas e de qualidade para garantir o funcionamento ideal de suas máquinas. Com anos de experiência no mercado, somos especializados em serviços de manutenção preventiva e corretiva, proporcionando tranquilidade e eficiência para o seu negócio.
-      </p>
+      <section id="inicio" className="welcome-section">
+  <div className="content-box">
+    <h2>Bem-vindo à LePetit Manutenções</h2>
+    <p>Sua parceira confiável em manutenção de máquinas de solda, corte e plasma!</p>
+    <p>
+      Na <strong>LePetit</strong>, nos dedicamos a oferecer soluções completas e de qualidade para garantir o funcionamento ideal de suas máquinas. Com anos de experiência no mercado, somos especializados em serviços de manutenção preventiva e corretiva, proporcionando tranquilidade e eficiência para o seu negócio.
+    </p>
+  </div>
+</section>
       <h3>Nossos serviços incluem:</h3>
       <ul>
         <li><strong>Manutenção de Máquinas de Solda:</strong> Garantimos o perfeito funcionamento das suas máquinas, realizando ajustes e reparos para que seus processos de soldagem sejam sempre seguros e eficientes.</li>
@@ -45,42 +48,35 @@ function App() {
         <p>Informações sobre a empresa e sua história.</p>
       </section>
       {/* conteudo sobre nós */}
-      <div>
-        <h1>Sobre nós</h1>
-        <p>Conheça a nossa história e experiência no mercado de manutenção de máquinas de solda, corte e plasma.</p>
-      </div>
+      
       
       <div className="section">
-        <h2>História da LePetit Manutenções</h2>
+        <h2>História da LePetit Manutenção</h2>
         <p>
-          A LePetit Manutenções foi fundada com o objetivo de fornecer soluções de alta qualidade e confiança no mercado de manutenção de máquinas de solda, corte e plasma. Com anos de experiência no setor, nossa missão sempre foi oferecer serviços especializados, com foco na eficiência e no compromisso com nossos clientes.
+          Fundada em abril de 2022, a Le Petit Manutenção oferece serviços especializados de consultoria e manutenção em equipamentos de solda, corte a plasma e robôs industriais. Somos uma assistência técnica multimarcas, comprometida com a excelência.
+          À frente da empresa está Tiago Le Petit, Tecnólogo em Automação Industrial e profissional com mais de 16 anos de experiência no reparo e manutenção industrial. Treinado por grandes fabricantes, como Miller, Hypertherm, ESAB, SUMIG e GULLCO (no Canadá), Tiago traz credenciais sólidas e vivência em duas das maiores assistências técnicas autorizadas de Campinas-SP.
         </p>
         <p>
-          Desde o início, buscamos estabelecer uma relação de confiança e transparência, sendo reconhecidos pela nossa capacidade de diagnosticar e resolver problemas de maneira ágil e eficaz. Nossa equipe de técnicos altamente capacitados está sempre atualizada com as mais recentes inovações e tecnologias, garantindo que os equipamentos de nossos clientes operem com o máximo de desempenho e segurança.
+        Entre nossos principais clientes estão grandes nomes como AQUAGEL, ARTINOX, COOPERATIVA HOLAMBRA, CCL – CAMPINAS CORTE LASER, EXCEED, KREITON, KROHNE, KSPG, STUCKI, NITROTEC, PARASON, SOLUFIL e SULCORTE, além de diversas empresas de médio e pequeno porte.
+        Oferecemos serviços de manutenção preditiva, preventiva e corretiva, sempre priorizando soluções personalizadas para atender às necessidades específicas de cada cliente.
         </p>
       </div>
       
       <div className="section">
         <h2>Nosso Compromisso</h2>
         <p>
-          Ao longo dos anos, a LePetit Manutenções tem se consolidado como referência no setor, oferecendo manutenção preventiva e corretiva para uma ampla gama de máquinas e equipamentos, sempre com a preocupação de atender às necessidades específicas de cada cliente.
+          Ao longo dos anos, a LePetit Manutenção tem se consolidado como referência no setor, oferecendo manutenção preventiva e corretiva para uma ampla gama de máquinas e equipamentos, sempre com a preocupação de atender às necessidades específicas de cada cliente.
         </p>
         <p>
           Estamos comprometidos em continuar a evolução do mercado, com soluções que atendem a todos os tipos de necessidade, com a qualidade que nossos clientes esperam e merecem.
         </p>
       </div>
       <section id="servicos">
-        <h2>Serviços</h2>
-        <p>Detalhes sobre os serviços que oferecemos.</p>
+        <h2>Serviços e Especialidades</h2>
       </section>
       {/* conteudo sobre serviços */}
-      <div>
-        <h1>Serviços</h1>
-        <p>Conheça os serviços especializados que oferecemos para a manutenção de máquinas de solda, corte e plasma.</p>
-      </div>
-
       <div className="section">
-        <h2>Detalhamento dos Serviços</h2>
+       
         <ul>
           <li>
             <h3>Manutenção Preventiva</h3>
@@ -110,7 +106,7 @@ function App() {
       </div>
 
       <div className="section">
-        <h2>Benefícios de Escolher a LePetit Manutenções</h2>
+        <h2>Benefícios de Escolher a LePetit Manutenção</h2>
         <ul>
           <li><strong>Maior Eficiência:</strong> Com a nossa manutenção preventiva, sua máquina terá um desempenho otimizado, com menos paradas e maior produção.</li>
           <li><strong>Redução de Custos:</strong> Evite gastos inesperados com manutenções corretivas. Com nossos serviços preventivos, você minimiza os custos com reparos urgentes e danos graves.</li>
@@ -122,10 +118,8 @@ function App() {
       <div className="section">
         <h2>Diferenciais da LePetit Manutenções</h2>
         <ul>
-          <li><strong>Equipe Especializada:</strong> Contamos com técnicos altamente qualificados e em constante atualização, com experiência no mercado e em diversas marcas e modelos de máquinas.</li>
-          <li><strong>Tecnologia de Ponta:</strong> Utilizamos equipamentos e ferramentas de última geração para garantir a melhor qualidade e precisão nos serviços prestados.</li>
-          <li><strong>Atendimento Ágil e Eficiente:</strong> Sabemos o quanto a sua produção é importante. Por isso, priorizamos um atendimento rápido e eficaz, com mínimo tempo de inatividade.</li>
-          <li><strong>Compromisso com a Qualidade:</strong> Todos os nossos serviços são realizados com o máximo de cuidado e atenção aos detalhes, para garantir que suas máquinas operem da melhor forma possível.</li>
+          Nosso diferencial está na combinação de qualidade, agilidade e eficiência. Estamos sempre prontos para resolver ocorrências que impactem a produtividade da sua empresa, estabelecendo uma relação de confiança e parceria.
+          Além disso, oferecemos suporte via WhatsApp, otimizando o tempo de resposta e agilizando soluções para os seus problemas.
         </ul>
       </div>
 
@@ -134,6 +128,7 @@ function App() {
        <section id="localizacao">
         <h2>Localização</h2>
         <p>Veja onde estamos localizados:</p>
+        <Contact />
         <LoadScript googleMapsApiKey="AIzaSyAUoWSFjsCgwS5zHTM-Cp1-Ngy6fXnuJoE">
           <GoogleMap
             mapContainerStyle={mapContainerStyle}

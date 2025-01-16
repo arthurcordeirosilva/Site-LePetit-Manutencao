@@ -1,0 +1,27 @@
+.rectangle {
+    width: 100%;
+    background-color: rgb(5, 15, 156);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os itens */
+  }
+  
+  .rectangle > * {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center; /* Alinha os ícones e os textos verticalmente */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+  }
+  
+  .contact-text {
+    font-size: 18px;
+    color: rgb(22, 19, 19);
+    font-weight: bold; /* Pode ajustar conforme desejado */
+  }

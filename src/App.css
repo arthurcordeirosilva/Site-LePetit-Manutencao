@@ -1,23 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-/* 
-section {
-  padding: 100px 20px;
-  min-height: 100vh;
-} */
-
-#inicio {
-  background-color: #f4f4f4;
-}
-
-#sobre-nos {
-  background-color: #e2e2e2;
-}
-
-#servicos {
-  background-color: #d0d0d0;
-}
 
 .footer {
   text-align: center;
@@ -29,4 +12,35 @@ section {
 .footer p {
   font-size: 14px;
   color: #888;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  background-image: url('./img/cortador-de-plasma.jpg'); /* Substitua com o caminho da sua imagem */
+  background-size: cover; /* A imagem cobre toda a área */
+  background-position: center; /* Centraliza a imagem */
+  padding: 20px; /* Ajuste o padding para deixar uma margem interna */
+}
+
+.content-box {
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para melhorar a legibilidade */
+  color: white; /* Cor do texto */
+  padding: 30px;
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: center;
+  max-width: 800px; /* Tamanho máximo da caixa */
+  width: 100%;
+}
+
+.content-box h2 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.content-box p {
+  font-size: 1.2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  line-height: 1.5;
 }
