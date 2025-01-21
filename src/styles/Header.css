@@ -18,9 +18,9 @@
 .logo-image {
   height: 60px; /* Aumenta a altura da imagem */
   margin-right: 0.3rem; /* Ajusta o espaçamento entre a imagem e o texto */
-   border-radius: 50%;
+   border-radius: 15%;
 }
-
+  
 .logo-text {
   font-size: 1.8rem; /* Aumenta o tamanho do texto para combinar com a logo */
   font-weight: bold;

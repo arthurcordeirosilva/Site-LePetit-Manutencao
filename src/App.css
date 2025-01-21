@@ -19,7 +19,7 @@ html {
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   height: 100vh; /* Ocupa toda a altura da tela */
-  background-image: url('./img/cortador-de-plasma.jpg'); /* Substitua com o caminho da sua imagem */
+  background-image: url('./img/ferramentas.jpeg'); /* Substitua com o caminho da sua imagem */
   background-size: cover; /* A imagem cobre toda a área */
   background-position: center; /* Centraliza a imagem */
   padding: 20px; /* Ajuste o padding para deixar uma margem interna */
@@ -31,7 +31,7 @@ html {
   padding: 30px;
   border-radius: 8px; /* Bordas arredondadas */
   text-align: center;
-  max-width: 800px; /* Tamanho máximo da caixa */
+  max-width: 350px; /* Tamanho máximo da caixa */
   width: 100%;
 }
 

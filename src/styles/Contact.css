@@ -1,17 +1,21 @@
 .rectangle {
     width: 100%;
-    background-color: rgb(5, 15, 156);
+    background-color: rgb(243, 0, 0);
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     padding: 20px;
     box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
-    flex-direction: column;
-    gap: 10px; /* Espaço entre os itens */
   }
   
   .rectangle > * {
     margin: 0 10px; /* Espaçamento entre os ícones */
+  }
+
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os itens */
   }
   
   .contact-item {
@@ -22,6 +26,6 @@
   
   .contact-text {
     font-size: 18px;
-    color: rgb(22, 19, 19);
+    color: rgb(255, 255, 255);
     font-weight: bold; /* Pode ajustar conforme desejado */
   }

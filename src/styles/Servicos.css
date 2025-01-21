@@ -1,0 +1,77 @@
+container {
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+    gap: 20px; /* Espaço entre as imagens */
+    padding: 20px; /* Espaço interno no contêiner */
+    background-color: #f8f8f8; /* Cor de fundo clara */
+    min-height: 100vh; /* Altura mínima da tela */
+  }
+  
+  /* Estilo compartilhado para todas as imagens */
+  .container img {
+    width: 300px; /* Largura fixa para as imagens */
+    height: auto; /* Mantém a proporção */
+    border-radius: 12px; /* Bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */   
+  }
+  
+
+/* Container principal */
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px;
+    
+}
+
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.background-box {
+    position: absolute;
+    top: -10px; /* Ajuste para o deslocamento acima */
+    left: -10px; /* Ajuste para o deslocamento lateral */
+    width: calc(100% + 20px); /* Torna a largura maior */
+    height: calc(100% + 20px); /* Torna a altura maior */
+    background-color:  rgb(243, 0, 0); /* Cor da caixa */
+    border-radius: 15px; /* Ajuste o raio de borda */
+    z-index: 0; /* Certifica que ficará atrás */
+}
+
+/* Estilização da imagem */
+.image-container {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique à frente */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.service-image {
+    width: 300px; /* Defina uma largura fixa */
+    height: 300px; /* Defina uma altura fixa */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%; 
+    background: black; /* Fundo totalmente preto */
+    color: #FFD700; /* Letra destacada em dourado (ou escolha outra cor) */
+    text-align: center;
+    padding: 10px 0; /* Espaçamento interno mais balanceado */
+    font-size: 16px; /* Ajuste conforme necessário */
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 1; /* Sempre visível */
+}

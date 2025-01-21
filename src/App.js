@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Contact from './components/contact';
+import Servicos from './components/Servicos';
+import Info from './components/info';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import './App.css';
 
@@ -19,20 +21,14 @@ function App() {
       <Header />
       <section id="inicio" className="welcome-section">
   <div className="content-box">
-    <h2>Bem-vindo à LePetit Manutenções</h2>
+    <h2>Serviço de Segurança e Qualidade</h2>
     <p>Sua parceira confiável em manutenção de máquinas de solda, corte e plasma!</p>
     <p>
       Na <strong>LePetit</strong>, nos dedicamos a oferecer soluções completas e de qualidade para garantir o funcionamento ideal de suas máquinas. Com anos de experiência no mercado, somos especializados em serviços de manutenção preventiva e corretiva, proporcionando tranquilidade e eficiência para o seu negócio.
     </p>
   </div>
 </section>
-      <h3>Nossos serviços incluem:</h3>
-      <ul>
-        <li><strong>Manutenção de Máquinas de Solda:</strong> Garantimos o perfeito funcionamento das suas máquinas, realizando ajustes e reparos para que seus processos de soldagem sejam sempre seguros e eficientes.</li>
-        <li><strong>Manutenção de Máquinas de Corte:</strong> Com a nossa manutenção especializada, suas máquinas de corte estarão sempre afiadas e prontas para realizar cortes de precisão.</li>
-        <li><strong>Manutenção de Máquinas de Plasma:</strong> Consertamos e realizamos manutenção em máquinas de plasma, com foco em prolongar a vida útil e melhorar o desempenho do equipamento.</li>
-      </ul>
-
+     
       <h3>Por que escolher a <strong>LePetit</strong>?</h3>
       <ul>
         <li><strong>Experiência e Qualidade:</strong> Profissionais qualificados e experientes para atender suas necessidades de manutenção.</li>
@@ -61,7 +57,8 @@ function App() {
         Oferecemos serviços de manutenção preditiva, preventiva e corretiva, sempre priorizando soluções personalizadas para atender às necessidades específicas de cada cliente.
         </p>
       </div>
-      
+      <Info/>
+
       <div className="section">
         <h2>Nosso Compromisso</h2>
         <p>
@@ -73,36 +70,19 @@ function App() {
       </div>
       <section id="servicos">
         <h2>Serviços e Especialidades</h2>
+
+        <Servicos />
+        <h3>Nossos serviços incluem:</h3>
+      <ul>
+        <li><strong>Manutenção de Máquinas de Solda:</strong> Garantimos o perfeito funcionamento das suas máquinas, realizando ajustes e reparos para que seus processos de soldagem sejam sempre seguros e eficientes.</li>
+        <li><strong>Manutenção de Máquinas de Corte:</strong> Com a nossa manutenção especializada, suas máquinas de corte estarão sempre afiadas e prontas para realizar cortes de precisão.</li>
+        <li><strong>Manutenção de Máquinas de Plasma:</strong> Consertamos e realizamos manutenção em máquinas de plasma, com foco em prolongar a vida útil e melhorar o desempenho do equipamento.</li>
+      </ul>
+
       </section>
       {/* conteudo sobre serviços */}
       <div className="section">
        
-        <ul>
-          <li>
-            <h3>Manutenção Preventiva</h3>
-            <p>
-              Realizamos inspeções regulares e ajustes em suas máquinas para evitar falhas inesperadas, aumentando a vida útil e a eficiência dos equipamentos.
-            </p>
-          </li>
-          <li>
-            <h3>Manutenção Corretiva</h3>
-            <p>
-              Em caso de falhas ou defeitos, nossa equipe está pronta para diagnosticar rapidamente o problema e realizar os reparos necessários para minimizar o tempo de inatividade e garantir que sua produção seja retomada sem demora.
-            </p>
-          </li>
-          <li>
-            <h3>Instalação de Sistemas de Corte e Plasma</h3>
-            <p>
-              Se você está adquirindo novas máquinas ou precisa de uma atualização em seu sistema de corte ou plasma, realizamos a instalação com precisão e expertise.
-            </p>
-          </li>
-          <li>
-            <h3>Consultoria Técnica</h3>
-            <p>
-              Oferecemos consultoria especializada para otimização dos processos de solda e corte, ajudando nossos clientes a melhorar a produtividade e reduzir custos.
-            </p>
-          </li>
-        </ul>
       </div>
 
       <div className="section">
