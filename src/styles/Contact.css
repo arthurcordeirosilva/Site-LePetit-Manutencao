@@ -1,31 +1,73 @@
-.rectangle {
+.contact-container {
     width: 100%;
     background-color: rgb(243, 0, 0);
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 20px;
-    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
-  }
-  
-  .rectangle > * {
-    margin: 0 10px; /* Espaçamento entre os ícones */
-  }
+    justify-content: space-around; /* Distribui o espaço entre as colunas */
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 40px; /* Espaço entre as colunas */
+    flex-wrap: wrap; /* Permite que as colunas se empilhem em telas menores */
+}
 
-  .rectangle {
+.contact-intro {
+    max-width: 500px; /* Limita a largura do texto */
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-intro p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaço entre os itens */
-  }
-  
-  .contact-item {
+    gap: 20px; /* Espaço entre os itens de contato */
+}
+
+.contact-item {
     display: flex;
-    align-items: center; /* Alinha os ícones e os textos verticalmente */
-    gap: 10px; /* Espaço entre o ícone e o texto */
-  }
-  
-  .contact-text {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    font-weight: bold; /* Pode ajustar conforme desejado */
-  }
+    align-items: center;
+    gap: 15px; /* Espaço entre o ícone e o texto */
+    color: #ffffff;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Efeito de hover suave */
+}
+
+.contact-item:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    opacity: 0.9; /* Reduz ligeiramente a opacidade */
+}
+
+.contact-text {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+        gap: 20px; /* Reduz o espaço entre as colunas */
+        padding: 20px;
+    }
+
+    .contact-intro {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .contact-info {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .contact-item {
+        gap: 10px; /* Reduz o espaço entre o ícone e o texto */
+    }
+
+    .contact-text {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+}

@@ -8,7 +8,6 @@ function Servicos() {
     return (
         <div className="servicos-container">
             <div className="image-wrapper">
-                <div className="background-box"></div>
                 <div className="image-container">
                     <img src={img1} alt="Corte" className="service-image" />
                     <div className="overlay">
@@ -17,7 +16,6 @@ function Servicos() {
                 </div>
             </div>
             <div className="image-wrapper">
-                <div className="background-box"></div>
                 <div className="image-container">
                     <img src={img2} alt="Solda" className="service-image" />
                     <div className="overlay">
@@ -26,7 +24,6 @@ function Servicos() {
                 </div>
             </div>
             <div className="image-wrapper">
-                <div className="background-box"></div>
                 <div className="image-container">
                     <img src={img3} alt="Plasma" className="service-image" />
                     <div className="overlay">

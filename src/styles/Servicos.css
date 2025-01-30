@@ -1,77 +1,69 @@
-container {
-    display: flex; /* Alinha os itens horizontalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
-    gap: 20px; /* Espaço entre as imagens */
-    padding: 20px; /* Espaço interno no contêiner */
-    background-color: #f8f8f8; /* Cor de fundo clara */
-    min-height: 100vh; /* Altura mínima da tela */
-  }
-  
-  /* Estilo compartilhado para todas as imagens */
-  .container img {
-    width: 300px; /* Largura fixa para as imagens */
-    height: auto; /* Mantém a proporção */
-    border-radius: 12px; /* Bordas arredondadas */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */   
-  }
-  
-
-/* Container principal */
 .servicos-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1px;
-    
+    gap: 20px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor */
 }
 
+/* Estilo para o contêiner da imagem */
 .image-wrapper {
     position: relative;
-    width: fit-content;
-    display: inline-block;
+    width: 300px; /* Largura fixa para as imagens */
+    margin-bottom: 20px; /* Espaço entre as imagens */
 }
 
-.background-box {
-    position: absolute;
-    top: -10px; /* Ajuste para o deslocamento acima */
-    left: -10px; /* Ajuste para o deslocamento lateral */
-    width: calc(100% + 20px); /* Torna a largura maior */
-    height: calc(100% + 20px); /* Torna a altura maior */
-    background-color:  rgb(243, 0, 0); /* Cor da caixa */
-    border-radius: 15px; /* Ajuste o raio de borda */
-    z-index: 0; /* Certifica que ficará atrás */
-}
-
-/* Estilização da imagem */
+/* Estilização das imagens */
 .image-container {
     position: relative;
-    z-index: 1; /* Garante que o conteúdo fique à frente */
     border-radius: 10px;
     overflow: hidden;
-    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
 }
 
 .service-image {
-    width: 300px; /* Defina uma largura fixa */
-    height: 300px; /* Defina uma altura fixa */
-    object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block; /* Remove espaços extras abaixo da imagem */
 }
 
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 30%;
-    right: 30%; 
-    background: black; /* Fundo totalmente preto */
-    color: #FFD700; /* Letra destacada em dourado (ou escolha outra cor) */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: #FFD700;
     text-align: center;
-    padding: 10px 0; /* Espaçamento interno mais balanceado */
-    font-size: 16px; /* Ajuste conforme necessário */
+    padding: 10px 0;
+    font-size: 16px;
     font-weight: bold;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    opacity: 1; /* Sempre visível */
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column; /* Empilha as imagens */
+        align-items: center;
+        gap: 10px; /* Reduz o espaço entre as imagens */
+    }
+
+    .image-wrapper {
+        width: 90%; /* Ajusta a largura para 90% do contêiner */
+        margin-bottom: 15px; /* Espaço entre as imagens empilhadas */
+    }
+
+    .service-image {
+        height: 250px; /* Reduz a altura das imagens */
+    }
+
+    .overlay {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        padding: 8px 0; /* Ajusta o padding */
+    }
 }

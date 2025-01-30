@@ -12,8 +12,9 @@ const location ={
 };
 
 const mapContainerStyle = {
-  width: '100%',
-  height: '400px',
+  width: "100%", // O mapa ocupará 100% da largura do contêiner pai
+  height: "50vh", // A altura será 50% da altura da janela de visualização
+  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" // Sombra leve
 };
 function App() {
   return (
@@ -21,53 +22,48 @@ function App() {
       <Header />
       <section id="inicio" className="welcome-section">
   <div className="content-box">
-    <h2>Serviço de Segurança e Qualidade</h2>
-    <p>Sua parceira confiável em manutenção de máquinas de solda, corte e plasma!</p>
-    <p>
-      Na <strong>LePetit</strong>, nos dedicamos a oferecer soluções completas e de qualidade para garantir o funcionamento ideal de suas máquinas. Com anos de experiência no mercado, somos especializados em serviços de manutenção preventiva e corretiva, proporcionando tranquilidade e eficiência para o seu negócio.
-    </p>
+ <h2>Manutenção Especializada com Segurança e Qualidade</h2>
+<p>
+  Na <strong>LePetit</strong>, cuidamos da manutenção das suas máquinas de solda, corte e plasma com expertise e compromisso. Evitamos paradas inesperadas e garantimos eficiência para o seu negócio.
+</p>
+<p>
+  Conte com nossos serviços de <strong>manutenção preventiva e corretiva</strong> para manter suas máquinas sempre em perfeito funcionamento.
+</p>
   </div>
 </section>
      
-      <h3>Por que escolher a <strong>LePetit</strong>?</h3>
-      <ul>
-        <li><strong>Experiência e Qualidade:</strong> Profissionais qualificados e experientes para atender suas necessidades de manutenção.</li>
-        <li><strong>Atendimento Personalizado:</strong> Oferecemos soluções sob medida, com foco na sua total satisfação.</li>
-        <li><strong>Rapidez e Eficiência:</strong> Trabalhamos com prazos justos e serviços rápidos, sem perder a qualidade.</li>
-      </ul>
-
-      <p>
-        Entre em contato conosco e descubra como podemos ajudar sua empresa a operar com mais segurança e eficiência!
-      </p>
+<h3>Por que escolher a <strong>LePetit</strong>?</h3>
+<ul>
+  <li><strong>Experiência e Qualidade:</strong> Profissionais qualificados e experientes para atender suas necessidades de manutenção.</li>
+  <li><strong>Atendimento Personalizado:</strong> Soluções sob medida, focadas na sua total satisfação.</li>
+  <li><strong>Rapidez e Eficiência:</strong> Prazos justos e serviços ágeis, sem perder a qualidade.</li>
+</ul>
+<p>
+  Entre em contato conosco e descubra como podemos ajudar sua empresa a operar com mais segurança e eficiência!
+</p>
       <section id="sobre-nos">
-        <h2>Sobre Nós</h2>
-        <p>Informações sobre a empresa e sua história.</p>
-      </section>
-      {/* conteudo sobre nós */}
-      
-      
-      <div className="section">
-        <h2>História da LePetit Manutenção</h2>
-        <p>
-          Fundada em abril de 2022, a Le Petit Manutenção oferece serviços especializados de consultoria e manutenção em equipamentos de solda, corte a plasma e robôs industriais. Somos uma assistência técnica multimarcas, comprometida com a excelência.
-          À frente da empresa está Tiago Le Petit, Tecnólogo em Automação Industrial e profissional com mais de 16 anos de experiência no reparo e manutenção industrial. Treinado por grandes fabricantes, como Miller, Hypertherm, ESAB, SUMIG e GULLCO (no Canadá), Tiago traz credenciais sólidas e vivência em duas das maiores assistências técnicas autorizadas de Campinas-SP.
-        </p>
-        <p>
-        Entre nossos principais clientes estão grandes nomes como AQUAGEL, ARTINOX, COOPERATIVA HOLAMBRA, CCL – CAMPINAS CORTE LASER, EXCEED, KREITON, KROHNE, KSPG, STUCKI, NITROTEC, PARASON, SOLUFIL e SULCORTE, além de diversas empresas de médio e pequeno porte.
-        Oferecemos serviços de manutenção preditiva, preventiva e corretiva, sempre priorizando soluções personalizadas para atender às necessidades específicas de cada cliente.
-        </p>
-      </div>
+  <h2>Sobre Nós</h2>
+  <p>
+    Fundada em abril de 2022, a <strong>LePetit Manutenção</strong> é especializada em consultoria e manutenção de equipamentos de solda, corte a plasma e robôs industriais. Somos uma assistência técnica multimarcas, comprometida com a excelência.
+  </p>
+  <p>
+    À frente da empresa está <strong>Tiago Le Petit</strong>, Tecnólogo em Automação Industrial com mais de 16 anos de experiência. Treinado por grandes fabricantes como Miller, Hypertherm, ESAB, SUMIG e GULLCO (no Canadá), Tiago traz credenciais sólidas e vivência em duas das maiores assistências técnicas autorizadas de Campinas-SP.
+  </p>
+  <p>
+    Entre nossos principais clientes estão grandes nomes como <strong>AQUAGEL, ARTINOX, COOPERATIVA HOLAMBRA, CCL – CAMPINAS CORTE LASER, EXCEED, KREITON, KROHNE, KSPG, STUCKI, NITROTEC, PARASON, SOLUFIL e SULCORTE</strong>, além de diversas empresas de médio e pequeno porte.
+  </p>
+</section>
       <Info/>
 
-      <div className="section">
-        <h2>Nosso Compromisso</h2>
-        <p>
-          Ao longo dos anos, a LePetit Manutenção tem se consolidado como referência no setor, oferecendo manutenção preventiva e corretiva para uma ampla gama de máquinas e equipamentos, sempre com a preocupação de atender às necessidades específicas de cada cliente.
-        </p>
-        <p>
-          Estamos comprometidos em continuar a evolução do mercado, com soluções que atendem a todos os tipos de necessidade, com a qualidade que nossos clientes esperam e merecem.
-        </p>
-      </div>
+     <div className="section">
+  <h2>Nosso Compromisso</h2>
+  <p>
+    Na <strong>LePetit Manutenção</strong>, estamos comprometidos em oferecer soluções que atendam às necessidades específicas de cada cliente. Com manutenção preventiva e corretiva, garantimos o funcionamento ideal das suas máquinas, evitando paradas inesperadas e aumentando a produtividade.
+  </p>
+  <p>
+    Nossa missão é continuar evoluindo no mercado, proporcionando serviços de alta qualidade e mantendo a confiança dos nossos clientes.
+  </p>
+</div>
       <section id="servicos">
         <h2>Serviços e Especialidades</h2>
 
@@ -81,11 +77,8 @@ function App() {
 
       </section>
       {/* conteudo sobre serviços */}
-      <div className="section">
-       
-      </div>
 
-      <div className="section">
+            <div className="section">
         <h2>Benefícios de Escolher a LePetit Manutenção</h2>
         <ul>
           <li><strong>Maior Eficiência:</strong> Com a nossa manutenção preventiva, sua máquina terá um desempenho otimizado, com menos paradas e maior produção.</li>
@@ -97,31 +90,33 @@ function App() {
 
       <div className="section">
         <h2>Diferenciais da LePetit Manutenções</h2>
-        <ul>
-          Nosso diferencial está na combinação de qualidade, agilidade e eficiência. Estamos sempre prontos para resolver ocorrências que impactem a produtividade da sua empresa, estabelecendo uma relação de confiança e parceria.
-          Além disso, oferecemos suporte via WhatsApp, otimizando o tempo de resposta e agilizando soluções para os seus problemas.
-        </ul>
+        <p>
+          Nosso diferencial está na combinação de <strong>qualidade, agilidade e eficiência</strong>. Estamos sempre prontos para resolver ocorrências que impactem a produtividade da sua empresa, estabelecendo uma relação de confiança e parceria.
+        </p>
+        <p>
+          Além disso, oferecemos suporte via <strong>WhatsApp</strong>, otimizando o tempo de resposta e agilizando soluções para os seus problemas.
+        </p>
       </div>
 
 
        {/* Seção de localização */}
-       <section id="localizacao">
-        <h2>Localização</h2>
-        <p>Veja onde estamos localizados:</p>
-        <Contact />
-        <LoadScript googleMapsApiKey="AIzaSyAUoWSFjsCgwS5zHTM-Cp1-Ngy6fXnuJoE">
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            center={location}
-            zoom={17}
-            options={{
-              mapId: 'MAP_ID_PERSONALIZADO', // Substitua pelo seu Map ID no Google Cloud Console
-            }}
-          >
-            <Marker position={location} />
-          </GoogleMap>
-        </LoadScript>
-      </section>
+        <section id="localizacao">
+          <h2>Localização</h2>
+          <p>Veja onde estamos localizados:</p>
+          <Contact />
+          <LoadScript googleMapsApiKey="AIzaSyAUoWSFjsCgwS5zHTM-Cp1-Ngy6fXnuJoE">
+            <GoogleMap
+              mapContainerStyle={mapContainerStyle}
+              center={location}
+              zoom={17}
+              options={{
+                mapId: 'MAP_ID_PERSONALIZADO', // Substitua pelo seu Map ID no Google Cloud Console
+              }}
+            >
+              <Marker position={location} />
+            </GoogleMap>
+          </LoadScript>
+        </section>
       {/* rodapé */}
       <div className="footer">
         <p>LePetit Manutenções | Todos os direitos reservados</p>

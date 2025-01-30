@@ -4,16 +4,20 @@ import { FaDollarSign, FaClock, FaCalendarAlt } from 'react-icons/fa';
 
 function Info() {
     return (
-        <div className="caixa">
-            <div className="info-item"> 
-                <FaClock size={30} color="black" />
-                <span className="info-text">8h - 18h</span>
-                <FaCalendarAlt size={30} color="black" />
-                <span className="info-text">segunda - sexta</span>
-                <FaDollarSign size={30} color="black" />
-                <span className="info-text">Agende um orçamento</span>
-            </div>
-        </div>
+    <div className="caixa">
+    <div className="info-item">
+        <FaClock size={30} color="black" />
+        <span className="info-text">8h - 18h</span>
+    </div>
+    <div className="info-item">
+        <FaCalendarAlt size={30} color="black" />
+        <span className="info-text">Segunda - Sexta</span>
+    </div>
+    <div className="info-item">
+        <FaDollarSign size={30} color="black" />
+        <span className="info-text">Agende um orçamento</span>
+    </div>
+</div>
     );
 }
 
