@@ -25,6 +25,9 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+.levemente-pro-lado {
+    padding-left: 2%;
+}
 /* Seção de boas-vindas */
 .welcome-section {
   display: flex;

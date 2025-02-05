@@ -31,7 +31,7 @@ function App() {
 </p>
   </div>
 </section>
-     
+  <div className='levemente-pro-lado'> 
 <h3>Por que escolher a <strong>LePetit</strong>?</h3>
 <ul>
   <li><strong>Experiência e Qualidade:</strong> Profissionais qualificados e experientes para atender suas necessidades de manutenção.</li>
@@ -41,7 +41,9 @@ function App() {
 <p>
   Entre em contato conosco e descubra como podemos ajudar sua empresa a operar com mais segurança e eficiência!
 </p>
+</div>  
       <section id="sobre-nos">
+        <div className='levemente-pro-lado'>
   <h2>Sobre Nós</h2>
   <p>
     Fundada em abril de 2022, a <strong>LePetit Manutenção</strong> é especializada em consultoria e manutenção de equipamentos de solda, corte a plasma e robôs industriais. Somos uma assistência técnica multimarcas, comprometida com a excelência.
@@ -52,6 +54,7 @@ function App() {
   <p>
     Entre nossos principais clientes estão grandes nomes como <strong>AQUAGEL, ARTINOX, COOPERATIVA HOLAMBRA, CCL – CAMPINAS CORTE LASER, EXCEED, KREITON, KROHNE, KSPG, STUCKI, NITROTEC, PARASON, SOLUFIL e SULCORTE</strong>, além de diversas empresas de médio e pequeno porte.
   </p>
+  </div>
 </section>
       <Info/>
 
@@ -68,13 +71,14 @@ function App() {
         <h2>Serviços e Especialidades</h2>
 
         <Servicos />
+        <div className='levemente-pro-lado'>
         <h3>Nossos serviços incluem:</h3>
       <ul>
         <li><strong>Manutenção de Máquinas de Solda:</strong> Garantimos o perfeito funcionamento das suas máquinas, realizando ajustes e reparos para que seus processos de soldagem sejam sempre seguros e eficientes.</li>
         <li><strong>Manutenção de Máquinas de Corte:</strong> Com a nossa manutenção especializada, suas máquinas de corte estarão sempre afiadas e prontas para realizar cortes de precisão.</li>
         <li><strong>Manutenção de Máquinas de Plasma:</strong> Consertamos e realizamos manutenção em máquinas de plasma, com foco em prolongar a vida útil e melhorar o desempenho do equipamento.</li>
       </ul>
-
+      </div>
       </section>
       {/* conteudo sobre serviços */}
 
@@ -101,8 +105,6 @@ function App() {
 
        {/* Seção de localização */}
         <section id="localizacao">
-          <h2>Localização</h2>
-          <p>Veja onde estamos localizados:</p>
           <Contact />
           <LoadScript googleMapsApiKey="AIzaSyAUoWSFjsCgwS5zHTM-Cp1-Ngy6fXnuJoE">
             <GoogleMap

@@ -1,6 +1,6 @@
 .contact-container {
     width: 100%;
-    background-color: rgb(243, 0, 0);
+    background-color: rgb(107, 107, 107);
     display: flex;
     justify-content: space-around; /* Distribui o espaço entre as colunas */
     align-items: center;
@@ -13,13 +13,16 @@
 .contact-intro {
     max-width: 500px; /* Limita a largura do texto */
     text-align: center;
-    color: #ffffff;
 }
 
 .contact-intro p {
     margin: 10px 0;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-texto p strong {
+    color: white; /* Define a cor do texto dentro de <strong> como branco */
 }
 
 .contact-info {
