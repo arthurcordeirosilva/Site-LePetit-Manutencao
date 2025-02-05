@@ -49,10 +49,7 @@ function App() {
     Fundada em abril de 2022, a <strong>LePetit Manutenção</strong> é especializada em consultoria e manutenção de equipamentos de solda, corte a plasma e robôs industriais. Somos uma assistência técnica multimarcas, comprometida com a excelência.
   </p>
   <p>
-    À frente da empresa está <strong>Tiago Le Petit</strong>, Tecnólogo em Automação Industrial com mais de 16 anos de experiência. Treinado por grandes fabricantes como Miller, Hypertherm, ESAB, SUMIG e GULLCO (no Canadá), Tiago traz credenciais sólidas e vivência em duas das maiores assistências técnicas autorizadas de Campinas-SP.
-  </p>
-  <p>
-    Entre nossos principais clientes estão grandes nomes como <strong>AQUAGEL, ARTINOX, COOPERATIVA HOLAMBRA, CCL – CAMPINAS CORTE LASER, EXCEED, KREITON, KROHNE, KSPG, STUCKI, NITROTEC, PARASON, SOLUFIL e SULCORTE</strong>, além de diversas empresas de médio e pequeno porte.
+    À frente da empresa está <strong>Tiago Le Petit</strong>, Tecnólogo em Automação Industrial com mais de 16 anos de experiência. Treinado por grandes fabricantes como Miller, Hypertherm, ESAB, SUMIG e GULLCO (no Canadá), Tiago traz credenciais sólidas e vivência na área de manutenção.
   </p>
   </div>
 </section>
@@ -121,7 +118,7 @@ function App() {
         </section>
       {/* rodapé */}
       <div className="footer">
-        <p>LePetit Manutenções | Todos os direitos reservados</p>
+        <p>LePetit Manutenção | Todos os direitos reservados</p>
       </div>
     </div>
     

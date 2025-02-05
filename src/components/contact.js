@@ -17,7 +17,7 @@ function Contact() {
                 </a>
                 <a href="mailto:LP.22manutencao@gmail.com" className="contact-item">
                     <FaEnvelope size={30} color="black" />
-                    <span className="contact-text">LP.22manutencao@gmail.com</span>
+                    <span className="contact-text">lp22.manutencao@gmail.com</span>
                 </a>
                 <a href="https://www.instagram.com/lp22.manutencao" target="_blank" rel="noopener noreferrer" className="contact-item">
                     <FaInstagram size={30} color="black" />
